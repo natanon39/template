@@ -1,5 +1,7 @@
 {
   "name": "TestLoginAndShowItem",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

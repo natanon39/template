@@ -1,0 +1,30 @@
+<ion-header>
+
+</ion-header>
+<ion-content padding >
+  <div class="center">
+  <ion-grid class="input">
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-item class="fields">
+          <ion-label position="floating">
+            <ion-icon name="person-outline" item-left></ion-icon> Enter your email
+          </ion-label>
+          <ion-input type="email" [(ngModel)]="postdata.email"></ion-input>
+        </ion-item>
+        <ion-item class="fields">
+          <ion-label position="floating">
+            <ion-icon name="lock-closed-outline" slot="start"></ion-icon> Enter your password
+          </ion-label>
+          <ion-input type="password" [(ngModel)]="postdata.password"></ion-input>
+        </ion-item>
+        <!-- <ngb-datepicker #dp (navigate)="date = $event.next"></ngb-datepicker> -->
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button (click)="onLogin()">Login
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>
